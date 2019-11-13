@@ -4,19 +4,31 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _MyAppState();
+  }
+}
+ 
+class _MyAppState extends State<MyApp>{     //underscore changes to private to be used in this file only
 
-  var questionIndex = 0;
-  void answerQuestion(){
-    questionIndex=questionIndex+1;
-    print(questionIndex);
+  var _questionIndex = 0;
+  void _answerQuestion(){
+    setState(() {
+      
+    });
+    _questionIndex=_questionIndex+1;
+    print(_questionIndex);
   }
   @override
   Widget build(BuildContext context) {
 
     var questions= [
       'Captain America’s shield is made of?',
-      'What is the name of Tony Stark’s personal butler?',
+      'What is the name of Tony Stark’s personal butler?', 
       'Who is the director of S.H.I.E.L.D. ?'
     ];
 
@@ -29,10 +41,10 @@ class MyApp extends StatelessWidget {
         
         body: Column(
           children: [
-              Text(questions[questionIndex]),
-              RaisedButton(child: Text('Answer 1'), onPressed: answerQuestion),
-              RaisedButton(child: Text('Answer 2'), onPressed: answerQuestion),
-              RaisedButton(child: Text('Answer 3'), onPressed: answerQuestion), 
+              Text(questions[_questionIndex]),
+              RaisedButton(child: Text('Answer 1'), onPressed: _answerQuestion),
+              RaisedButton(child: Text('Answer 2'), onPressed: _answerQuestion),
+              RaisedButton(child: Text('Answer 3'), onPressed: _answerQuestion), 
           ],
         ),
       ),
