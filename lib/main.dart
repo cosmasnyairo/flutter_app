@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
       {'question': 'Who constructed the shield?',
        'answers':['Johann Schmidt','Red Skull','Howard Stark','Bucky Barness'
       ]},
-      {'question': 'Stan Lee has had cameos in all Marvel Cinematic Universe movies to date',
+      {'question': 'Stan Lee has had cameos in all Marvel movies',
        'answers':['True','False'
       ]},
       {'question': 'What is the name of Tony Stark’s personal secretary?',
@@ -54,10 +54,10 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
       {'question': 'In “Captain America: Civil War”, who rules Wakanda?',
        'answers':['HYDRA','Steve Rodgers','Black Panther','Winter Soldier'
       ]},
-      {'question': 'What was Dr. Strange’s profession before he became Sorcerer Supreme?',
+      {'question': 'What was Dr. Strange’s profession before becoming Sorcerer Supreme?',
        'answers':['professor','dermatologist','dentist','neurosurgeon'
       ]},
-      {'question': 'What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?',
+      {'question': 'What is the name of Peter Quill’s alter-ego ?',
        'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
       ]},
       
