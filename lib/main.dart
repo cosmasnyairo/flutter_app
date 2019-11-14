@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
   @override
   Widget build(BuildContext context) {
 
-    var quiz= [
+    const quiz= [
       {'question':'Captain America’s shield is made of?',
        'answers':['Vibranium','Chrome','Adamantium','Kryptonite'
       ]},
@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
       ]},
       {'question': 'What is the name of Peter Quill’s alter-ego ?',
        'answers':['Yondu','Drax','Star-Lord','Groot'
-      ]},
+      ]}, 
       
 
       
