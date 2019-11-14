@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './question.dart';
+import './answers.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,16 +29,40 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
   @override
   Widget build(BuildContext context) {
 
-    var questions= [
-      'Captain America’s shield is made of?',
-      'What\'s the name of Tony Stark’s personal butler?', 
-      'Who is the director of S.H.I.E.L.D. ?'
-      'Captain America’s shield is made of?',
-      'What\'s the name of Tony Stark’s personal butler?', 
-      'Who is the director of S.H.I.E.L.D. ?'
-      'Captain America’s shield is made of?',
-      'What\'s the name of Tony Stark’s personal butler?', 
-      'Who is the director of S.H.I.E.L.D. ?'
+    var quiz= [
+      {'question':'Captain America’s shield is made of?',
+       'answers':['Vibranium','Chrome','Adamantium','Kryptonite'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      {'question':'What\'s the name of Tony Stark’s personal butler?',
+       'answers':['Jeeves','Jarvis','Alfred','Jennings'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+       'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
+      ]},
+      
+
+      
     ];
 
     return MaterialApp(
@@ -49,10 +74,10 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
         
         body: Column(
           children: [
-              Question(questions[_questionIndex]),
-              RaisedButton(child: Text('Answer 1'), onPressed: _answerQuestion),
-              RaisedButton(child: Text('Answer 2'), onPressed: _answerQuestion),
-              RaisedButton(child: Text('Answer 3'), onPressed: _answerQuestion), 
+              Question(quiz[_questionIndex]['question']),
+              ...(quiz[_questionIndex]['answers'] as List <String>).map((answer){ // this function creates new widget per question....as to define it as a list 
+                return Answer(_answerQuestion ,answer); 
+              }).toList()
           ],
         ),
       ),
