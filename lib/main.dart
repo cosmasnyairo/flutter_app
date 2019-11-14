@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
       {'question': 'What was Dr. Strange’s profession before he became Sorcerer Supreme?',
        'answers':['professor','dermatologist','dentist','neurosurgeon'
       ]},
-      {'question': 'Who is the Director of S.H.I.E.L.D. ?',
+      {'question': 'What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?',
        'answers':['Nick Fury','Tony Stark','Captain America','Tony Potts'
       ]},
       
