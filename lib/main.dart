@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './question.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -28,7 +30,13 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
 
     var questions= [
       'Captain America’s shield is made of?',
-      'What is the name of Tony Stark’s personal butler?', 
+      'What\'s the name of Tony Stark’s personal butler?', 
+      'Who is the director of S.H.I.E.L.D. ?'
+      'Captain America’s shield is made of?',
+      'What\'s the name of Tony Stark’s personal butler?', 
+      'Who is the director of S.H.I.E.L.D. ?'
+      'Captain America’s shield is made of?',
+      'What\'s the name of Tony Stark’s personal butler?', 
       'Who is the director of S.H.I.E.L.D. ?'
     ];
 
@@ -41,7 +49,7 @@ class _MyAppState extends State<MyApp>{     //underscore changes to private to b
         
         body: Column(
           children: [
-              Text(questions[_questionIndex]),
+              Question(questions[_questionIndex]),
               RaisedButton(child: Text('Answer 1'), onPressed: _answerQuestion),
               RaisedButton(child: Text('Answer 2'), onPressed: _answerQuestion),
               RaisedButton(child: Text('Answer 3'), onPressed: _answerQuestion), 
