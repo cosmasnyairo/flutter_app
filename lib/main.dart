@@ -135,10 +135,12 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
             title: Text(" Marvel Trivia"),
+            backgroundColor: Colors.amber,
           ),
           body: _questionIndex <_questions.length // the widget runs if  condition true
               ? Quiz(
@@ -148,6 +150,7 @@ class _MyAppState extends State<MyApp> {
                 )
               : Result(_totalScore,_resetQuiz), // colon is for the else block
           ),
+          debugShowCheckedModeBanner: false,
     );
   }
 }
