@@ -25,7 +25,7 @@ INJECTED from C:\Users\User\Flutter\flutter_app\android\app\src\debug\AndroidMan
 application
 ADDED from C:\Users\User\Flutter\flutter_app\android\app\src\main\AndroidManifest.xml:9:5-32:19
 	android:label
-		ADDED from C:\Users\User\Flutter\flutter_app\android\app\src\main\AndroidManifest.xml:11:9-36
+		ADDED from C:\Users\User\Flutter\flutter_app\android\app\src\main\AndroidManifest.xml:11:9-38
 	android:icon
 		ADDED from C:\Users\User\Flutter\flutter_app\android\app\src\main\AndroidManifest.xml:12:9-43
 	android:name
